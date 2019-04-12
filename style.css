@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar navbar'
+                         'section section aside aside'
+                         'section section aside aside'
+                         'section section aside aside'
+                         'footer footer footer footer';
+    grid-template-rows: 81vh 60vh 30vh;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+}
+header {
+    border-top: 10px solid green;
+    grid-area: navbar;
+    background-image: url(images/banner.png);
+    
+}
