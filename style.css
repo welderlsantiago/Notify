@@ -1,17 +1,44 @@
+aside{
+    grid-area: aside;
+    background-color: brown;
+}
 body{
     margin: 0;
     display: grid;
-    grid-template-areas: 'navbar navbar navbar navbar'
-                         'section section aside aside'
-                         'section section aside aside'
-                         'section section aside aside'
+    grid-template-areas: 'header header header header'
+                         'section section section section'
+                         'aside aside aside aside'
+                         'notify notify notify notify'
                          'footer footer footer footer';
-    grid-template-rows: 81vh 60vh 30vh;
+    grid-template-rows: 83.5vh 45.8vh 58vh 63.8vh 10vh;
     grid-template-columns: 25vw 25vw 25vw 25vw;
+}
+footer{
+    grid-area: footer;
+    background-color: red;
 }
 header {
     border-top: 10px solid green;
-    grid-area: navbar;
+    grid-area: header;
     background-image: url(images/banner.png);
+    display: flex;
     
+}
+header div {
+    width: 50%;
+}
+header img {
+    width: 378px;
+    padding-top: 81px;
+    border-left-width: 0px;
+    padding-left: 83px;
+    height: 279.875;
+}
+main {
+    grid-area: notify;
+    background-color: aqua ;
+}
+section{
+    grid-area: section;
+    background-color: orange ;
 }
