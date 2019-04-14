@@ -1,24 +1,119 @@
-aside{
-    grid-area: aside;
-    background-color: brown;
+.tituloNoti {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.200em;
+    color: white;
+    padding-left: 277px;
+    padding-top: 88px;
+    font-weight: lighter;
+    height: 16%;
 }
-body{
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 280px;
+    height: 100%;
+}
+.resumo {
+    height: 55px;
+    padding-left: 280px;
+    font-size: 16.1pt;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+}
+.gaiola {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 81%;
+}
+.newsLetter {
+    width: 65%;
+}
+.video {
+    padding-top: 50px;
+    padding-left: 75px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    align-content: center;
+    background-color: #E3E3E3;
+}
+.videoArea {
+    grid-area: video;
+    background-color: #E3E3E3;
+}
+.submitArea {
+    width: 65%;;
+}
+#iconeWindows {
+    background-color: #2ECB72;
+}
+#caixaEmail {
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    height: 45.3px;
+    font-family: 'Roboto', sans-serif;
+    width: 260px; 
+    text-indent: 20px;
+    padding: 2.5px;
+    font-size: 13pt;
+}
+#submit {
+    padding: 5px;
+    background-color: #2ECB72;
+    font-family: 'Roboto', sans-serif; 
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: 600;
+    height: 47.5px;
+    border:none;
+    width: 120px;
+    cursor: pointer;
+    font-size: 14pt;
+    padding-bottom: 37.2px;
+    padding-top: 13px;
+}
+aside {
+    padding-left: 71px;
+    padding-bottom: 80px;
+    grid-area: aside;
+    background-color: #E3E3E3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+aside div p {
+    font-family: 'Roboto', sans-serif;
+    color:  #828282;
+    font-size: 11pt;
+
+}
+body {
     margin: 0;
     display: grid;
     grid-template-areas: 'header header header header'
                          'section section section section'
-                         'aside aside aside aside'
+                         'aside aside video video'
                          'notify notify notify notify'
                          'footer footer footer footer';
     grid-template-rows: 83.5vh 45.8vh 58vh 63.8vh 10vh;
     grid-template-columns: 25vw 25vw 25vw 25vw;
 }
-footer{
+footer {
     grid-area: footer;
     background-color: red;
 }
 header {
-    border-top: 10px solid green;
+    border-top: 8.5px solid #2ECB72;
     grid-area: header;
     background-image: url(images/banner.png);
     display: flex;
@@ -26,6 +121,7 @@ header {
 }
 header div {
     width: 50%;
+    
 }
 header img {
     width: 378px;
@@ -34,11 +130,80 @@ header img {
     padding-left: 83px;
     height: 279.875;
 }
+h1 span {
+    color: #2ECB72;
+}
 main {
     grid-area: notify;
     background-color: aqua ;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
-section{
+main a img {
+    width: 25px;
+    height: 25px;
+}
+nav {
+    padding-left: 277px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav a {
+    width: 44px;
+    height: 44px;
+    background-color: black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a img {
+    padding: 0;
+    width: 21.5px;
+    height: 21.5px;
+}
+section {
     grid-area: section;
-    background-color: orange ;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
+h2{
+    font-size: 14pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0; 
+}
+section div p {
+    text-indent: 10px;
+    font-size: 11pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color:  #c0c0c0;
+    text-align: center;
+}
+section figure {
+    width: 85px;
+    height: 85px;
+    background-color: #2ECB72 ;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 21px;
+    margin-bottom: 27px;
+    
+}
+section figure image {
+    height: 48px;
+    width: 48px;
+}
+
