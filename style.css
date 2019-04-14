@@ -7,6 +7,46 @@
     font-weight: lighter;
     height: 16%;
 }
+.faceRol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 73.5%;
+    height: 16%;
+}
+.iconeRol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 16%;
+}
+.iconeRodape {
+    background-color: #cccbcb;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.iconeRodape:hover {
+    background-color: #2ECB72;
+}
+.iconeRodape img {
+    padding: 0;
+    width: 16.5px;
+    height: 16.5px;
+}
+.imagePerson {
+    background-image: url(images/pessoa1.jpg);
+    width: 43px;
+    height: 43px;
+}
+.imagePerson:hover .transition {
+    width:100%;
+    height:100%;
+    background-color:rgba(12, 206, 12, 0.534);
+} 
 .infos {
     display: flex;
     flex-direction: column;
@@ -15,6 +55,26 @@
     background-color: white;
     width: 280px;
     height: 100%;
+}
+.txtRodape {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: none;
+    padding-top: 15px;
+    height: 16%;
+}
+.txtRodape h2 {
+    font-size: 12pt;
+    font-weight: 600;
+    height: 0%;
+    padding: 0%;
+}
+.paragrafo {
+    font-family: 'Roboto', sans-serif;
+    color:  #828282;
+    font-size: 11pt;
+    text-decoration: none;
 }
 .resumo {
     height: 55px;
@@ -49,9 +109,6 @@
 }
 .submitArea {
     width: 65%;;
-}
-#iconeWindows {
-    background-color: #2ECB72;
 }
 #caixaEmail {
     background-color: white;
@@ -91,12 +148,6 @@ aside {
     justify-content: center;
     align-items: center;
 }
-aside div p {
-    font-family: 'Roboto', sans-serif;
-    color:  #828282;
-    font-size: 11pt;
-
-}
 body {
     margin: 0;
     display: grid;
@@ -105,23 +156,30 @@ body {
                          'aside aside video video'
                          'notify notify notify notify'
                          'footer footer footer footer';
-    grid-template-rows: 83.5vh 45.8vh 58vh 63.8vh 10vh;
+    grid-template-rows: 83.5vh 45.8vh 58vh 63.8vh 17.9vh;
     grid-template-columns: 25vw 25vw 25vw 25vw;
 }
 footer {
     grid-area: footer;
-    background-color: red;
+    background-color: #E3E3E3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer div {
+    width: 36%;
+    display: flex;
+    justify-content: space-around;
+    height: 16%;
 }
 header {
     border-top: 8.5px solid #2ECB72;
     grid-area: header;
     background-image: url(images/banner.png);
     display: flex;
-    
 }
 header div {
     width: 50%;
-    
 }
 header img {
     width: 378px;
@@ -135,16 +193,16 @@ h1 span {
 }
 main {
     grid-area: notify;
-    background-color: aqua ;
+    background-color: white ;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
     text-align: center;
 }
-main a img {
-    width: 25px;
-    height: 25px;
+main h2 {
+    height:0%;
+    padding-top: 16px;
 }
 nav {
     padding-left: 277px;
@@ -156,7 +214,7 @@ nav {
 nav a {
     width: 44px;
     height: 44px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.534);
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -166,6 +224,9 @@ nav a img {
     padding: 0;
     width: 21.5px;
     height: 21.5px;
+}
+nav a:hover {
+    background-color: #2ECB72;
 }
 section {
     grid-area: section;
@@ -199,8 +260,7 @@ section figure {
     align-content: center;
     align-items: center;
     margin-top: 21px;
-    margin-bottom: 27px;
-    
+    margin-bottom: 27px;   
 }
 section figure image {
     height: 48px;
